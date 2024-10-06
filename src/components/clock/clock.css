@@ -1,0 +1,15 @@
+.clock {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__text {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

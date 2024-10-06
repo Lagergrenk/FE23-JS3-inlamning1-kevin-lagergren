@@ -1,0 +1,88 @@
+:root {
+  /* Primary Colors */
+  --color-black: #000000;
+  --color-dark-black: #1a1a1a;
+  --color-light-black: #333333;
+
+  --color-blue: #007bff;
+  --color-dark-blue: #0056b3;
+  --color-light-blue: #66b2ff;
+
+  /* Accent Colors */
+  --color-accent: #3399ff;
+  --color-hover-blue: #0056d2;
+
+  /* Text Colors */
+  --color-text-main: var(--color-light-blue);
+  --color-text-secondary: var(--color-dark-blue);
+  --color-text-black: var(--color-light-black);
+
+  /* Background Colors */
+  --color-bg-main: var(--color-black);
+  --color-bg-secondary: var(--color-dark-black);
+  --color-bg-accent: var(--color-blue);
+
+  /* Black with opacity */
+  --color-black-opaque-10: rgba(0, 0, 0, 0.1); /* 10% opacity */
+  --color-black-opaque-20: rgba(0, 0, 0, 0.2); /* 20% opacity */
+  --color-black-opaque-50: rgba(0, 0, 0, 0.5); /* 50% opacity */
+  --color-black-opaque-70: rgba(0, 0, 0, 0.7); /* 70% opacity */
+  --color-black-opaque-90: rgba(0, 0, 0, 0.9); /* 90% opacity */
+
+  /* Blue with opacity */
+  --color-blue-opaque-10: rgba(0, 123, 255, 0.1); /* 10% opacity */
+  --color-blue-opaque-20: rgba(0, 123, 255, 0.2); /* 20% opacity */
+  --color-blue-opaque-50: rgba(0, 123, 255, 0.5); /* 50% opacity */
+  --color-blue-opaque-70: rgba(0, 123, 255, 0.7); /* 70% opacity */
+  --color-blue-opaque-90: rgba(0, 123, 255, 0.9); /* 90% opacity */
+
+  /* Light Black with opacity */
+  --color-light-black-opaque-10: rgba(51, 51, 51, 0.1); /* 10% opacity */
+  --color-light-black-opaque-20: rgba(51, 51, 51, 0.2); /* 20% opacity */
+  --color-light-black-opaque-50: rgba(51, 51, 51, 0.5); /* 50% opacity */
+  --color-light-black-opaque-70: rgba(51, 51, 51, 0.7); /* 70% opacity */
+  --color-light-black-opaque-90: rgba(51, 51, 51, 0.9); /* 90% opacity */
+
+  /* Dark Blue with opacity */
+  --color-dark-blue-opaque-10: rgba(0, 86, 179, 0.1); /* 10% opacity */
+  --color-dark-blue-opaque-20: rgba(0, 86, 179, 0.2); /* 20% opacity */
+  --color-dark-blue-opaque-50: rgba(0, 86, 179, 0.5); /* 50% opacity */
+  --color-dark-blue-opaque-70: rgba(0, 86, 179, 0.7); /* 70% opacity */
+  --color-dark-blue-opaque-90: rgba(0, 86, 179, 0.9); /* 90% opacity */
+}
+
+body {
+  background: no-repeat url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 90vh;
+  color: var(--color-text-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-main);
+}
+
+button {
+  background-color: var(--color-bg-accent);
+  color: var(--color-text-black);
+}
+
+button:hover {
+  background-color: var(--color-hover-blue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
