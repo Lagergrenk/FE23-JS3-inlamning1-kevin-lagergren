@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 
-// Define the LocalTime type
 type LocalTime = {
   hours: number;
   minutes: number;
@@ -8,7 +7,6 @@ type LocalTime = {
 };
 
 const useLocalTime = (): LocalTime => {
-
   // Initialize the local time state
   const [localTime, setLocalTime] = useState<LocalTime>({
     hours: 0,

@@ -6,17 +6,17 @@ type ClockProps = {
   seconds: number;
 };
 
-// When the time is less than 10, add a 0 before the time
-const formatTime = (time: number): string => {
-  return time < 10 ? `0${time}` : `${time}`;
-};
-
 // Clock component to display the time
-const Clock = ({ hours, minutes, seconds }: ClockProps) => {
+const Clock = (props: ClockProps) => {
+  // When the time is less than 10, add a 0 before the time
+  const formatTime = (time: number): string => {
+    return time < 10 ? `0${time}` : `${time}`;
+  };
+
   return (
     <div className='clock'>
       <p className='clock__text'>
-        {formatTime(hours)} : {formatTime(minutes)} : {formatTime(seconds)}
+        {formatTime(props.hours)} : {formatTime(props.minutes)} : {formatTime(props.seconds)}
       </p>
     </div>
   );
